@@ -1,0 +1,124 @@
+@import "_custom";
+@import "~bootstrap/scss/bootstrap";
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 20px 0 0 0;
+	font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+	background-color: $subwayGreen;
+
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+
+#root{
+	width: 100%;
+}
+
+.inline-icon {
+	max-height: 40px;
+	padding: 0 5px;
+	vertical-align: middle;
+}
+
+.wrapper {
+	display: block;
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	color: white;
+
+	img {
+		max-width: 100%;
+		object-fit: contain;
+		margin: 10px 0;
+	}
+}
+
+img.logo {
+	display: block;
+	margin: 0 auto 30px auto;
+	width: 100%;
+	height: 150px;
+	object-fit: contain;
+}
+
+input[type=submit] {
+	background-color: #fff;
+	color: $subwayGreen;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+span.loading img {
+	display: block;
+	margin: 50px auto;
+	height: 100px;
+	width: 100px;
+	object-fit: cover;
+	animation: rotation 850ms infinite linear;
+}
+
+div.cookieCodeWrapper {
+	display: block;
+	margin: 30px auto;
+	text-align: center;
+	font-size: 140%;
+	line-height: 1.5em;
+
+	div.cookieCode {
+		font-size: 130%;
+		text-align: center;
+		padding: 20px 0;
+		margin: 50px auto;
+		border: 4px solid white;
+	}
+
+	div.info {
+		margin: 10px 0;
+	}
+
+	a {
+		color: $subwayGreen;
+	}
+}
+
+div.addToHomeScreen{
+	padding: 20px 0;
+	background-color: lighten($subwayGreen, 15);
+	text-align: center;
+	font-family: "Helvetica Neue", sans-serif;
+
+	p{
+		font-size: 120%;
+		margin: 0 0 30px 0;
+
+		img{
+			margin: 0;
+		}
+	}
+
+	strong{
+		font-weight: 800;
+		margin: 0 10px 0 0;
+	}
+}
